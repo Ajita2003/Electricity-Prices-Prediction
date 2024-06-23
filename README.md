@@ -14,6 +14,7 @@ This is a Data Science Project for predicting and evaluating electricity prices 
 1. HTML
 2. CSS
 3. Bootstrap (optional)
+
 *Backend:* 
 1. Python
 2. Flask
