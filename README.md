@@ -1,4 +1,4 @@
-# Electricity Price Prediction 
+# Electricity Prices Prediction 
 
 This is a Data Science Project for predicting and evaluating electricity prices based on various features. It includes data visualization features such as correlation heatmap and month vs SMPEP2 plot.
 
@@ -10,11 +10,11 @@ This is a Data Science Project for predicting and evaluating electricity prices 
 - About the developer section with links and information.
 
 # Tech Stack used:
-Frontend: 
+*Frontend:* 
 1. HTML
 2. CSS
 3. Bootstrap (optional)
-Backend: 
+*Backend:* 
 1. Python
 2. Flask
 3. Pandas
