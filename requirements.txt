@@ -59,8 +59,7 @@ statsmodels
 sympy
 tensorboard
 tensorboard-data-server
-tensorflow
-tensorflow-intel
+tensorflow==2.16.1
 termcolor
 threadpoolctl
 torch
