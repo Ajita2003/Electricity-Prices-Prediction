@@ -57,9 +57,6 @@ setuptools
 six
 statsmodels
 sympy
-tensorboard
-tensorboard-data-server
-tensorflow==2.16.1
 termcolor
 threadpoolctl
 torch
