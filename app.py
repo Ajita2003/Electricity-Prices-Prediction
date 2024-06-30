@@ -1,5 +1,5 @@
-import matplotlib
-matplotlib.use('Agg')  # Use the non-GUI backend 'Agg'
+#import matplotlib
+#matplotlib.use('Agg')  # Use the non-GUI backend 'Agg'
 from flask import Flask, render_template, request, send_from_directory, url_for
 import pandas as pd
 import numpy as np
@@ -53,26 +53,26 @@ def evaluate():
 
 @app.route('/correlation_plot')
 def correlation_plot():
-    features = cols[:-1] + ["SMPEP2"]
+    """features = cols[:-1] + ["SMPEP2"]
     correlations = data[features].corr(method='pearson')
     plt.figure(figsize=(16, 12))
     sns.heatmap(correlations, cmap="coolwarm", annot=True)
     plot_path = os.path.join('static', 'plots', 'correlation_plot.png')
     plt.savefig(plot_path)
-    plt.close()
-    return render_template('index.html', correlation_plot='correlation_plot.png')
+    plt.close()"""
+    return send_from_directory('static/plots', 'correlation_plot.png')
 
 @app.route('/month_vs_smpep2_plot')
 def month_vs_smpep2_plot():
-    plt.figure(figsize=(10, 6))
+    """plt.figure(figsize=(10, 6))
     sns.barplot(data=data, x="Month", y="SMPEP2")
     plt.xlabel("Month")
     plt.ylabel("SMPEP2")
     plt.title("Month Vs SMPEP2")
     plot_path = os.path.join('static', 'plots', 'month_vs_smpep2_plot.png')
     plt.savefig(plot_path)
-    plt.close()
-    return render_template('index.html', month_vs_smpep2_plot='month_vs_smpep2_plot.png')
+    plt.close()"""
+    return send_from_directory('static/plots', 'month_vs_smpep2_plot.png')
 
 @app.route('/static/plots/<filename>')
 def send_plot(filename):
