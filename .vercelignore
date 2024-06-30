@@ -1,0 +1,37 @@
+# Python virtual environment
+venv/
+.env/
+
+# Python compiled files
+*.pyc
+*.pyo
+__pycache__/
+
+# Log files
+*.log
+
+# Local configuration files
+*.local
+
+# Static files and assets (if not needed for deployment)
+static/
+
+# Temporary files and directories
+tmp/
+temp/
+*.swp
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Vercel configuration directory (if you don't want to include it in the deployment)
+.vercel/
+
+# Docker-related files (if you are not using Docker)
+Dockerfile
+docker-compose.yml
+
+# Development and testing files (if not needed for deployment)
+tests/
+*.test
